@@ -1,4 +1,4 @@
-[README (4).md](https://github.com/user-attachments/files/25640625/README.4.md)
+
 # PicToScript-AI — Image Captioning with Xception + LSTM
 
 A deep learning project that automatically generates natural language captions for images, built and trained on the Flickr8k dataset.
