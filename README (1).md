@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/25640578/README.md)
+[README (4).md](https://github.com/user-attachments/files/25640625/README.4.md)
 # PicToScript-AI — Image Captioning with Xception + LSTM
 
 A deep learning project that automatically generates natural language captions for images, built and trained on the Flickr8k dataset.
@@ -12,7 +12,6 @@ PicToScript-AI takes any image as input and outputs a human-readable caption des
 ---
 
 ## Problem Statement
-
 
 Automatically describing the content of an image in natural language is a classic challenge at the intersection of computer vision and NLP. A good image captioning model needs to:
 - Understand what objects and actions are present in an image
@@ -83,21 +82,21 @@ A BLEU-1 of 0.534 means roughly half the words in the generated captions match t
 
 **Example 1**
 
-![Sample 1](sample1.png)
-
-![sample1](https://github.com/user-attachments/assets/74aabd68-d52c-45e2-b4bb-3ea872fb400d)
+![sample1](https://github.com/user-attachments/assets/0dbe9b8f-ac86-4910-9dc9-217ccf953f71)
 
 **Example 2**
-![Sample 2](sample2.png)
 
-![sample2](https://github.com/user-attachments/assets/44f7a523-3dc8-4860-870a-313eec282134)
+![sample2](https://github.com/user-attachments/assets/f87fdf29-646f-4cbc-b0e0-8c1ddc611a39)
 
 **Example 3**
 
-![Sample 3](sample3.png)
+![sample3](https://github.com/user-attachments/assets/7295a67c-73ee-4c73-8aa0-cf07a6484968)
 
+### Observations
 
-![sample3](https://github.com/user-attachments/assets/3c5e4171-11b7-48fb-830c-ebf0b1357a52)
+The model performs well on common, straightforward scenes — Example 1 correctly identifies the skateboarder and the action, only getting the location slightly wrong. However it struggles with unusual or complex images, as seen in Examples 2 and 3 where it misidentifies gender, colour, and context.
+
+This is expected behaviour for a single-layer LSTM trained on 7k images. The model has learned general patterns (people, actions, locations) but lacks the capacity to pick up on finer visual details. Performance could be improved with a larger dataset, attention mechanisms, or a Transformer-based decoder.
 
 ---
 
